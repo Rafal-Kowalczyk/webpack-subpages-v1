@@ -7,7 +7,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    index: './src/index.js',
     contact: './src/subpages/contact/contact.js',
     products: './src/subpages/products/products.js',
   },
@@ -70,7 +70,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      chunks: ['main'],
+      chunks: ['index'],
       title: 'Webpack-subpages',
       template: './src/index.html',
       filename: 'index.html',

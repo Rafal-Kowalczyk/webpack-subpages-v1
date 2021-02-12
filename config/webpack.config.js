@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    index: './src/index.js',
     contact: './src/subpages/contact/contact.js',
     products: './src/subpages/products/products.js',
   },
@@ -44,7 +44,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      chunks: ['main'],
+      chunks: ['index'],
       title: 'Webpack-subpages',
       template: './src/index.html',
       filename: 'index.html',
