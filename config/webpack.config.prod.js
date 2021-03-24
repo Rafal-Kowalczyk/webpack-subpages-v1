@@ -85,7 +85,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       chunks: ['products'],
-      title: 'Webpack-subpages/contact',
+      title: 'Webpack-subpages/products',
       template: './src/subpages/products/products.html',
       filename: 'products.html',
       favicon: './public/images/favicon.ico',
