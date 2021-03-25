@@ -74,21 +74,21 @@ module.exports = {
       title: 'Webpack-subpages',
       template: './src/index.html',
       filename: 'index.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       chunks: ['contact'],
       title: 'Webpack-subpages/contact',
       template: './src/subpages/contact/contact.html',
       filename: 'contact.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       chunks: ['products'],
       title: 'Webpack-subpages/products',
       template: './src/subpages/products/products.html',
       filename: 'products.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash:5].css',
@@ -96,7 +96,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'public/images',
+          from: 'src/images',
           to: 'images',
         },
       ],

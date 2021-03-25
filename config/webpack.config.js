@@ -16,7 +16,7 @@ module.exports = {
   },
   devServer: {
     open: true,
-    contentBase: path.resolve(__dirname, '../', 'public'),
+    contentBase: path.resolve(__dirname, '../', 'src'),
     port: 3002,
   },
   module: {
@@ -48,21 +48,21 @@ module.exports = {
       title: 'Webpack-subpages',
       template: './src/index.html',
       filename: 'index.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       chunks: ['contact'],
       title: 'Webpack-subpages/contact',
       template: './src/subpages/contact/contact.html',
       filename: 'contact.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       chunks: ['products'],
       title: 'Webpack-subpages/products',
       template: './src/subpages/products/products.html',
       filename: 'products.html',
-      favicon: './public/images/favicon.ico',
+      favicon: './src/images/favicon.ico',
     }),
   ],
 };
